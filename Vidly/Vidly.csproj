@@ -229,15 +229,34 @@
     <Compile Include="Migrations\201710261449403_AddBirthdateToCustomer.Designer.cs">
       <DependentUpon>201710261449403_AddBirthdateToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710261507465_AddMoviesToDatabase.cs" />
+    <Compile Include="Migrations\201710261507465_AddMoviesToDatabase.Designer.cs">
+      <DependentUpon>201710261507465_AddMoviesToDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710261514166_AddColumnsForInfoAboutMovies.cs" />
+    <Compile Include="Migrations\201710261514166_AddColumnsForInfoAboutMovies.Designer.cs">
+      <DependentUpon>201710261514166_AddColumnsForInfoAboutMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710261515038_PopulateGenres.cs" />
+    <Compile Include="Migrations\201710261515038_PopulateGenres.Designer.cs">
+      <DependentUpon>201710261515038_PopulateGenres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710292045128_MadeMovieReleaseDateNullable.cs" />
+    <Compile Include="Migrations\201710292045128_MadeMovieReleaseDateNullable.Designer.cs">
+      <DependentUpon>201710292045128_MadeMovieReleaseDateNullable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\CustomerFormViewModel.cs" />
+    <Compile Include="ViewModels\MovieFormViewModel.cs" />
     <Compile Include="ViewModels\RandomMovieViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +321,9 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Customers\CustomerForm.cshtml" />
+    <Content Include="Views\Movies\MovieForm.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -343,6 +365,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710261449403_AddBirthdateToCustomer.resx">
       <DependentUpon>201710261449403_AddBirthdateToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710261507465_AddMoviesToDatabase.resx">
+      <DependentUpon>201710261507465_AddMoviesToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710261514166_AddColumnsForInfoAboutMovies.resx">
+      <DependentUpon>201710261514166_AddColumnsForInfoAboutMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710261515038_PopulateGenres.resx">
+      <DependentUpon>201710261515038_PopulateGenres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710292045128_MadeMovieReleaseDateNullable.resx">
+      <DependentUpon>201710292045128_MadeMovieReleaseDateNullable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
