@@ -14,5 +14,17 @@ namespace Vidly.Models
         public short SignUpFee { get; set; }
         public byte DurationInMonths { get; set; }
         public byte DiscountRate { get; set; }
+
+        public static readonly byte Unknown = 0;
+        public static readonly byte PayAsYouGo = 1;
+
+        // enum solution would require (byte) while comparing it
+        /*
+        public enum MembershipTypEnum : byte
+        {
+            Unknown = 0,
+            PayAsYouGo = 1
+        };
+        */
     }
 }
